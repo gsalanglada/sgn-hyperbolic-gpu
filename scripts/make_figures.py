@@ -442,17 +442,21 @@ def fig_convergence():
         p = os.path.join(RES, fn)
         if not os.path.exists(p):
             print(f"  ({fn} missing, skipped)"); continue
-        _, d = read_csv(p)
+        hdr, d = read_csv(p)
+        # columns by name: convergence1d.csv also carries dof, steps, wall
+        # time, ... (P,ne,dof,steps,hL2err,...), convergence2d.csv is P,N,hL2err
+        cP, cN = hdr.index("P"), hdr.index("ne" if "ne" in hdr else "N")
+        cE = hdr.index("hL2err")
         for P in (1, 2, 3, 4):
-            m = d[d[:, 0] == P]
+            m = d[d[:, cP] == P]
             if len(m) == 0:
                 continue
-            h = 1.0 / m[:, 1]            # ~ mesh spacing
-            err = m[:, 2]
+            h = 1.0 / m[:, cN]           # ~ mesh spacing
+            err = m[:, cE]
             ax.loglog(h, err, "o-", ms=4, label=f"$P={P}$")
             order = P if P % 2 == 0 else P + 1
             ax.loglog(h, err[-1] * (h / h[-1]) ** order, "k--", lw=0.6)
-        ax.set_xlabel("mesh spacing $h$")
+        ax.set_xlabel(r"mesh spacing $\Delta x$")
         ax.set_title(f"{dim} MMS convergence", fontsize=9)
         ax.legend(frameon=False, fontsize=7, ncol=2, loc="lower right")
         # clean decade ticks only, no minor-tick label clutter
