@@ -1,0 +1,2 @@
+ranks,Nx,Ny,P,dof,dShoal,rShoal,hCrest,A,xA,yA,tA,etaRms,acc,rej,wall_s,massDrift
+16,768,384,4,36864000,0.9000,4.5000,0.1000,2.595998,20.0611,10.0000,4.0800,1.19414822e-01,53522,3,80.240,1.20e-14

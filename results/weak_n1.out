@@ -1,0 +1,12 @@
+unload bsc/1.0 (PATH, MANPATH)
+load CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+# host=as01r5b18  date=2026-08-04T07:38:08Z
+# nvcc: Build cuda_12.3.r12.3/compiler.33567101_0
+# mpi:  mpirun (Open MPI) 4.1.5
+# gcc:  gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+# gpu: NVIDIA H100, 595.71.05
+# aborted=0 dM=8.26e-14 dtLast=1.849e-04 reps=5 wall[min,max]=[6.3864,6.3885]
+ranks,Nx,Ny,P,dof,acc,rej,rhsEvals,wall_med_s,ms_per_step,gdof_per_rhs_s
+1,256,256,4,8192000,900,2,2707,6.3878,7.0975,3.47

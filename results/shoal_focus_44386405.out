@@ -1,0 +1,79 @@
+remove openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/12.3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/12.3"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+# host=as07r4b17  date=2026-08-08T05:50:34Z
+/scratch/slurm/job44386405/slurm_script: line 43: nvcc: command not found
+# nvcc: 
+# mpi:  mpirun (Open MPI) 4.1.5
+# gcc:  gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+# gpu: NVIDIA H100, 595.71.05
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as07r4b17
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as07r4b17
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as07r4b17
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as07r4b17
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+# shoal focusing, 4 ranks, 384x192 P=4, DOF=9.2M, tEnd=8.00
+# shoal: crest elevation 0.650 m (still depth 0.350 m over the crest), radius 3.000 m
+#   sample     t     etaMaxDown/a   etaMaxGlobal/a
+       0    0.000        0.00018        0.99998
+      10    0.800        0.00402        1.00073
+      20    1.600        0.02038        1.01363
+      30    2.400        0.20337        1.04372
+      40    3.200        0.99266        1.05910
+      50    4.000        1.32966        1.32966
+      60    4.800        1.46495        1.46495
+      70    5.600        1.36689        1.36689
+      80    6.400        1.26176        1.26176
+      90    7.200        1.19599        1.19599
+     100    8.000        1.16301        1.16301
+#
+# focusing amplification A = eta_max/a = 1.4675  at (x,y)=(22.188,10.000) t=4.720
+# downstream eta RMS at tEnd = 1.17338910e-01  (field-level diagnostic: short dispersive waves, converges far more slowly than A)
+ranks,Nx,Ny,P,dof,dShoal,rShoal,hCrest,A,xA,yA,tA,etaRms,acc,rej,wall_s,massDrift
+4,384,192,4,9216000,0.6500,3.0000,0.3500,1.467450,22.1875,10.0000,4.7200,1.17338910e-01,33031,4,47.678,3.52e-14

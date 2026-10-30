@@ -1,0 +1,21 @@
+# =============================================================================
+# setup_env.src -- MareNostrum 5 environment (modules) for building and running
+# =============================================================================
+#
+# Source this before any GPU or MPI build, and before running:
+#   source setup_env.src
+# Every job script in scripts/ sources it as its first command.
+#
+# Same module pattern as the NSK-FR-CUDA engine this project reuses. CUDA 12.x
+# for Hopper (sm_90 -> the ACC partition's H100). Adjust the exact versions to
+# whatever the ACC partition currently provides (module avail).
+# =============================================================================
+module purge
+module load cuda/12.3
+# The multi-GPU solver sends device pointers directly through MPI, so it needs a
+# CUDA-aware MPI build. Confirm CUDA support with:
+#   ompi_info | grep -i 'cuda'
+module load openmpi/4.1.5-gcc
+# On MN5 the UCX cuda_ipc transport is flaky under multi-GPU -- disable it
+# (the job scripts do this right after sourcing this file):
+#   export UCX_TLS=^cuda_ipc

@@ -1,0 +1,84 @@
+remove openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+unload CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+# host=as06r5b14  date=2026-08-14T13:22:06Z
+# nvcc: Build cuda_12.3.r12.3/compiler.33567101_0
+# mpi:  mpirun (Open MPI) 4.1.5
+# gcc:  gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+# gpu: NVIDIA H100, 595.71.05
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as06r5b14
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as06r5b14
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as06r5b14
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as06r5b14
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+[1786713732.248991] [as06r5b14:347258:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+# dispersive tsunami over a continental margin
+# 4 ranks, 1000x500 elements, P=4, 6.25e+07 DOF, dx=800 m, tEnd=2.50 h
+# basin 4000x2000 km, depth 4000 m -> shelf 150 m, source 2.0 m
+# model: SHALLOW WATER (alpha = 0, non-dispersive baseline)
+#  sample     t[min]   etaMaxShelf[m]  etaMaxGlobal[m]
+       0/150       0.00         0.0000           2.0000   [0 s elapsed]
+      10/150      10.00         0.0000           0.8849   [11 s elapsed]
+      20/150      20.00         0.0000           0.7988   [22 s elapsed]
+      30/150      30.00         0.0000           0.7316   [33 s elapsed]
+      40/150      40.00         0.0000           0.6776   [44 s elapsed]
+      50/150      50.00         0.0014           0.6410   [55 s elapsed]
+      60/150      60.00         0.0763           0.7930   [66 s elapsed]
+      70/150      70.00         0.4111           1.0513   [78 s elapsed]
+      80/150      80.00         0.7996           1.1915   [89 s elapsed]
+      90/150      90.00         0.9796           1.2525   [100 s elapsed]
+     100/150     100.00         1.0561           1.2765   [111 s elapsed]
+     110/150     110.00         1.0780           1.2839   [122 s elapsed]
+     120/150     120.00         1.0747           1.2857   [133 s elapsed]
+     130/150     130.00         1.0643           1.2788   [144 s elapsed]
+     140/150     140.00         1.0470           1.2824   [155 s elapsed]
+     150/150     150.00         1.0339           1.2739   [166 s elapsed]
+#
+# shelf peak eta = 1.0788 m at (x,y)=(3034.0,1000.0) km, t=111.0 min
+# incident amplitude at the margin = 0.7142 m (source was 2.00 m; the difference is 2D spreading)
+# shoaling ratio measured 1.510 vs Green's law 2.272  -> excess -33.5% from 2D refraction and dispersion
+# compute 166.0 s (+0.0 s output), 10330 accepted steps, 11.9 GDOF/s aggregate, 2.97 GDOF/s per GPU
+# same work on one GPU at the measured 3.09 GDOF/s: 0.2 h
+ranks,Nx,Ny,P,dof,dx_m,tEnd_h,etaShelfPeak,xPk_km,yPk_km,tPk_min,etaIncident,shoalRatio,greenRatio,acc,rej,wall_s,vtk_s,gdof_s,massDrift
+4,1000,500,4,62500000,800.0,2.500,1.078810,3034.000,1000.000,111.000,0.714211,1.5105,2.2724,10330,180,166.004,0.000,11.87,1.77e-13
+[1786713732.248980] [as06r5b14:347261:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786713732.248992] [as06r5b14:347259:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786713732.248982] [as06r5b14:347260:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)

@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "sgn-hyperbolic-gpu: a reproducible distributed multi-GPU flux-reconstruction solver for hyperbolic Serre-Green-Naghdi water waves"
+version: 1.0.0
+date-released: 2026-10-30
+license: MIT
+repository-code: "https://github.com/gsalanglada/sgn-hyperbolic-gpu"
+authors:
+  - family-names: Sal-Anglada
+    given-names: Gastón
+    orcid: "https://orcid.org/0000-0002-0560-0035"
+    affiliation: "Barcelona Supercomputing Center (BSC-CNS)"
+  - family-names: Lehmkuhl
+    given-names: Oriol
+    orcid: "https://orcid.org/0000-0002-2670-1871"
+    affiliation: "Barcelona Supercomputing Center (BSC-CNS)"
+keywords:
+  - Serre-Green-Naghdi
+  - dispersive water waves
+  - hyperbolic relaxation
+  - flux reconstruction
+  - multi-GPU
+  - CUDA-aware MPI
+  - reproducibility

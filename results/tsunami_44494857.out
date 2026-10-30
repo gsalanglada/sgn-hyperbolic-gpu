@@ -1,0 +1,215 @@
+remove openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+unload CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+# host=as05r4b01  date=2026-08-11T07:56:24Z
+# nvcc: Build cuda_12.3.r12.3/compiler.33567101_0
+# mpi:  mpirun (Open MPI) 4.1.5
+# gcc:  gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+# gpu: NVIDIA H100, 595.71.05
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b03
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b03
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b03
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b03
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b02
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b02
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b02
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b02
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b07
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b07
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b07
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as05r4b07
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+[1786434991.404762] [as05r4b01:2875200:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+# dispersive tsunami over a continental margin
+# 16 ranks, 1000x500 elements, P=4, 6.25e+07 DOF, dx=800 m, tEnd=2.50 h
+# basin 4000x2000 km, depth 4000 m -> shelf 150 m, source 2.0 m
+#  sample     t[min]   etaMaxShelf[m]  etaMaxGlobal[m]
+       0/150       0.00         0.0000           2.0000   [0 s elapsed]
+      10/150      10.00         0.0000           0.8835   [12 s elapsed]
+      20/150      20.00         0.0000           0.7949   [25 s elapsed]
+      30/150      30.00         0.0000           0.7244   [39 s elapsed]
+      40/150      40.00         0.0000           0.6668   [55 s elapsed]
+      50/150      50.00         0.0015           0.6263   [71 s elapsed]
+      60/150      60.00         0.0753           0.7616   [87 s elapsed]
+      70/150      70.00         0.3964           1.0070   [105 s elapsed]
+      80/150      80.00         0.7571           1.1434   [122 s elapsed]
+      90/150      90.00         0.9282           1.1987   [140 s elapsed]
+     100/150     100.00         1.0034           1.2257   [159 s elapsed]
+     110/150     110.00         1.0235           1.2318   [177 s elapsed]
+     120/150     120.00         1.0206           1.2311   [195 s elapsed]
+     130/150     130.00         1.0109           1.2334   [213 s elapsed]
+     140/150     140.00         0.9954           1.2277   [232 s elapsed]
+     150/150     150.00         0.9820           1.2288   [250 s elapsed]
+#
+# shelf peak eta = 1.0254 m at (x,y)=(3035.3,1000.0) km, t=112.0 min
+# incident amplitude at the margin = 0.7040 m (source was 2.00 m; the difference is 2D spreading)
+# shoaling ratio measured 1.457 vs Green's law 2.272  -> excess -35.9% from 2D refraction and dispersion
+# compute 238.5 s (+11.6 s output), 88224 accepted steps, 69.4 GDOF/s aggregate, 4.34 GDOF/s per GPU
+# same work on one GPU at the measured 3.09 GDOF/s: 1.5 h
+ranks,Nx,Ny,P,dof,dx_m,tEnd_h,etaShelfPeak,xPk_km,yPk_km,tPk_min,etaIncident,shoalRatio,greenRatio,acc,rej,wall_s,vtk_s,gdof_s,massDrift
+16,1000,500,4,62500000,800.0,2.500,1.025447,3035.309,1000.000,112.000,0.704019,1.4566,2.2724,88224,3,238.466,11.619,69.37,1.12e-14
+[1786434991.404769] [as05r4b01:2875201:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.404860] [as05r4b01:2875203:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.405127] [as05r4b01:2875202:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.406504] [as05r4b07:1513327:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.403291] [as05r4b03:2494338:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.406258] [as05r4b07:1513328:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.401806] [as05r4b02:2783653:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.405965] [as05r4b07:1513326:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.403290] [as05r4b03:2494339:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.403328] [as05r4b03:2494341:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.403575] [as05r4b03:2494340:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.406257] [as05r4b07:1513329:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.402234] [as05r4b02:2783655:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.401950] [as05r4b02:2783656:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)
+[1786434991.401809] [as05r4b02:2783654:0]     ucp_context.c:2431 UCX  WARN  UCP API version is incompatible: required >= 1.21, actual 1.20.0 (loaded from /lib64/libucp.so.0)

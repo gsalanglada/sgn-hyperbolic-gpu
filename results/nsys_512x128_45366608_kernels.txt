@@ -1,0 +1,18 @@
+Generating SQLite file results/nsys_512x128_45366608.sqlite from results/nsys_512x128_45366608.nsys-rep
+Processing [results/nsys_512x128_45366608.sqlite] with [/gpfs/apps/MN5/ACC/CUDA/12.3/nsight-systems-2023.3.3/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns)  | Med (ns)  | Min (ns) | Max (ns) | StdDev (ns) |                                                 Name                                                 |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+|     62.3 |       944496810 |       671 | 1407595.8 | 1405985.0 |  1363873 |  1450528 |     14575.5 | sgn::<unnamed>::kFaces(const double *, const double *, const double *, const double *, const double… |
+|     15.3 |       231391106 |       671 |  344845.2 |  344832.0 |   343552 |   348096 |       462.4 | sgn::<unnamed>::kVolume(const double *, const double *, const double *, const double *, const doubl… |
+|      6.4 |        97086567 |       671 |  144689.4 |  144129.0 |   134912 |   150496 |      2644.9 | sgn::<unnamed>::kNodalFlux(const double *, const double *, sgn2d::Params, int, double *, double *)   |
+|      5.4 |        81371940 |       671 |  121269.7 |  121153.0 |   114433 |   129728 |      1839.2 | sgn::<unnamed>::kInterfaces(const double *, const double *, const double *, const double *, const d… |
+|      3.8 |        57878853 |       223 |  259546.4 |  259328.0 |   258208 |   261632 |       786.8 | sgn::<unnamed>::kErrNorm(const double *, const double *, const double *, const double *, const doub… |
+|      3.5 |        53630627 |       446 |  120248.0 |  121168.0 |   117344 |   124992 |      2424.5 | sgn::<unnamed>::kComb1(double *, const double *, double, const double *, int)                        |
+|      3.2 |        48120118 |       223 |  215785.3 |  215808.0 |   214912 |   216480 |       289.7 | sgn::<unnamed>::kComb3(double *, const double *, double, const double *, double, const double *, do… |
+|      0.2 |         2386598 |       671 |    3556.8 |    3552.0 |     3232 |     3968 |       131.8 | sgn::<unnamed>::kPack(const double *, const double *, int, int, int, double *, double *)             |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+

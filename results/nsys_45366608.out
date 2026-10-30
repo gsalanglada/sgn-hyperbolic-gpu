@@ -1,0 +1,83 @@
+remove openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+unload CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+# host=as02r2b12  date=2026-09-03T10:32:48Z
+# NVIDIA Nsight Systems version 2023.3.3.42-233333266658v0
+# gpu: NVIDIA H100, 65247 MiB
+
+==================================================================
+== mesh 512x128  (8192000 DOF, ~172 MB working set)
+==================================================================
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+# aborted=0 dM=3.48e-15 dtLast=1.691e-04 reps=1 wall[min,max]=[1.5557,1.5557]
+ranks,Nx,Ny,P,dof,acc,rej,rhsEvals,wall_med_s,ms_per_step,gdof_per_rhs_s
+1,512,128,4,8192000,217,2,658,1.5557,7.1689,3.46
+Generating '/scratch/tmp/45366608/nsys-report-9ceb.qdstrm'
+[1/1] [0%                          ] nsys_512x128_45366608.nsys-rep[1/1] [0%                          ] nsys_512x128_45366608.nsys-rep[1/1] [=17%                        ] nsys_512x128_45366608.nsys-rep[1/1] [======35%                   ] nsys_512x128_45366608.nsys-rep[1/1] [=======36%                  ] nsys_512x128_45366608.nsys-rep[1/1] [=======37%                  ] nsys_512x128_45366608.nsys-rep[1/1] [=======38%                  ] nsys_512x128_45366608.nsys-rep[1/1] [====================85%     ] nsys_512x128_45366608.nsys-rep[1/1] [========================100%] nsys_512x128_45366608.nsys-rep[1/1] [========================100%] nsys_512x128_45366608.nsys-rep
+Generated:
+    /gpfs/scratch/bsc21/bsc122986/6_SGN_waves_GPU/results/nsys_512x128_45366608.nsys-rep
+--- kernel time breakdown (512x128) ---
+Generating SQLite file results/nsys_512x128_45366608.sqlite from results/nsys_512x128_45366608.nsys-rep
+Processing [results/nsys_512x128_45366608.sqlite] with [/gpfs/apps/MN5/ACC/CUDA/12.3/nsight-systems-2023.3.3/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns)  | Med (ns)  | Min (ns) | Max (ns) | StdDev (ns) |                                                 Name                                                 |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+|     62.3 |       944496810 |       671 | 1407595.8 | 1405985.0 |  1363873 |  1450528 |     14575.5 | sgn::<unnamed>::kFaces(const double *, const double *, const double *, const double *, const double… |
+|     15.3 |       231391106 |       671 |  344845.2 |  344832.0 |   343552 |   348096 |       462.4 | sgn::<unnamed>::kVolume(const double *, const double *, const double *, const double *, const doubl… |
+|      6.4 |        97086567 |       671 |  144689.4 |  144129.0 |   134912 |   150496 |      2644.9 | sgn::<unnamed>::kNodalFlux(const double *, const double *, sgn2d::Params, int, double *, double *)   |
+|      5.4 |        81371940 |       671 |  121269.7 |  121153.0 |   114433 |   129728 |      1839.2 | sgn::<unnamed>::kInterfaces(const double *, const double *, const double *, const double *, const d… |
+|      3.8 |        57878853 |       223 |  259546.4 |  259328.0 |   258208 |   261632 |       786.8 | sgn::<unnamed>::kErrNorm(const double *, const double *, const double *, const double *, const doub… |
+|      3.5 |        53630627 |       446 |  120248.0 |  121168.0 |   117344 |   124992 |      2424.5 | sgn::<unnamed>::kComb1(double *, const double *, double, const double *, int)                        |
+|      3.2 |        48120118 |       223 |  215785.3 |  215808.0 |   214912 |   216480 |       289.7 | sgn::<unnamed>::kComb3(double *, const double *, double, const double *, double, const double *, do… |
+|      0.2 |         2386598 |       671 |    3556.8 |    3552.0 |     3232 |     3968 |       131.8 | sgn::<unnamed>::kPack(const double *, const double *, int, int, int, double *, double *)             |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+
+
+==================================================================
+== mesh 1024x256  (32768000 DOF, ~688 MB working set)
+==================================================================
+WARNING: CPU IP/backtrace sampling not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+WARNING: CPU context switch tracing not supported, disabling.
+Try the 'nsys status --environment' command to learn more.
+
+# aborted=0 dM=6.52e-15 dtLast=1.065e-04 reps=1 wall[min,max]=[14.1390,14.1390]
+ranks,Nx,Ny,P,dof,acc,rej,rhsEvals,wall_med_s,ms_per_step,gdof_per_rhs_s
+1,1024,256,4,32768000,442,2,1333,14.1390,31.9887,3.09
+Generating '/scratch/tmp/45366608/nsys-report-435f.qdstrm'
+[1/1] [0%                          ] nsys_1024x256_45366608.nsys-rep[1/1] [0%                          ] nsys_1024x256_45366608.nsys-rep[1/1] [10%                         ] nsys_1024x256_45366608.nsys-rep[1/1] [==21%                       ] nsys_1024x256_45366608.nsys-rep[1/1] [===22%                      ] nsys_1024x256_45366608.nsys-rep[1/1] [===23%                      ] nsys_1024x256_45366608.nsys-rep[1/1] [===24%                      ] nsys_1024x256_45366608.nsys-rep[1/1] [====25%                     ] nsys_1024x256_45366608.nsys-rep[1/1] [====26%                     ] nsys_1024x256_45366608.nsys-rep[1/1] [====27%                     ] nsys_1024x256_45366608.nsys-rep[1/1] [====28%                     ] nsys_1024x256_45366608.nsys-rep[1/1] [=====29%                    ] nsys_1024x256_45366608.nsys-rep[1/1] [================68%         ] nsys_1024x256_45366608.nsys-rep[1/1] [===================82%      ] nsys_1024x256_45366608.nsys-rep[1/1] [========================100%] nsys_1024x256_45366608.nsys-rep[1/1] [========================100%] nsys_1024x256_45366608.nsys-rep
+Generated:
+    /gpfs/scratch/bsc21/bsc122986/6_SGN_waves_GPU/results/nsys_1024x256_45366608.nsys-rep
+--- kernel time breakdown (1024x256) ---
+Generating SQLite file results/nsys_1024x256_45366608.sqlite from results/nsys_1024x256_45366608.nsys-rep
+Processing [results/nsys_1024x256_45366608.sqlite] with [/gpfs/apps/MN5/ACC/CUDA/12.3/nsight-systems-2023.3.3/host-linux-x64/reports/cuda_gpu_kern_sum.py]... 
+
+ ** CUDA GPU Kernel Summary (cuda_gpu_kern_sum):
+
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+| Time (%) | Total Time (ns) | Instances | Avg (ns)  | Med (ns)  | Min (ns) | Max (ns) | StdDev (ns) |                                                 Name                                                 |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+|     67.4 |      9367290349 |      1343 | 6974899.7 | 6974855.0 |  6830502 |  7913256 |     60300.8 | sgn::<unnamed>::kFaces(const double *, const double *, const double *, const double *, const double… |
+|     13.2 |      1828502362 |      1343 | 1361505.9 | 1361570.0 |  1354081 |  1370816 |      2151.6 | sgn::<unnamed>::kVolume(const double *, const double *, const double *, const double *, const doubl… |
+|      5.7 |       796758403 |      1343 |  593267.6 |  593504.0 |   578880 |   599680 |      2278.4 | sgn::<unnamed>::kNodalFlux(const double *, const double *, sgn2d::Params, int, double *, double *)   |
+|      4.4 |       608209562 |      1343 |  452873.8 |  452865.0 |   433888 |   462752 |      2512.9 | sgn::<unnamed>::kInterfaces(const double *, const double *, const double *, const double *, const d… |
+|      3.3 |       454209340 |       894 |  508064.1 |  510401.0 |   503488 |   514112 |      3694.9 | sgn::<unnamed>::kComb1(double *, const double *, double, const double *, int)                        |
+|      3.3 |       453543560 |       447 | 1014638.8 | 1014465.0 |  1012129 |  1019521 |      1218.1 | sgn::<unnamed>::kErrNorm(const double *, const double *, const double *, const double *, const doub… |
+|      2.8 |       382930577 |       447 |  856668.0 |  856641.0 |   855361 |   858305 |       557.9 | sgn::<unnamed>::kComb3(double *, const double *, double, const double *, double, const double *, do… |
+|      0.0 |         5029487 |      1343 |    3745.0 |    3744.0 |     3392 |     4288 |       143.8 | sgn::<unnamed>::kPack(const double *, const double *, int, int, int, double *, double *)             |
++----------+-----------------+-----------+-----------+-----------+----------+----------+-------------+------------------------------------------------------------------------------------------------------+
+
+
+# done. reports -> results/nsys_*_45366608*

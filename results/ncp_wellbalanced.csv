@@ -1,0 +1,7 @@
+scheme,ne,maxAbsRhs
+central,32,0.000000e+00
+central,64,0.000000e+00
+central,128,0.000000e+00
+upwind,32,0.000000e+00
+upwind,64,0.000000e+00
+upwind,128,0.000000e+00

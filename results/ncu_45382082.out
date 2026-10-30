@@ -1,0 +1,23 @@
+remove openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+unload CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load CUDA/12.3 (PATH, MANPATH, LD_LIBRARY_PATH, LIBRARY_PATH, C_INCLUDE_PATH,
+CPLUS_INCLUDE_PATH, CUDA_HOME, CUDA_VERSION, CUDA_INC, CUDA_INSTALL_PATH) 
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+# host=as01r2b01  date=2026-09-03T16:16:57Z
+# NVIDIA (R) Nsight Compute Command Line Profiler
+# Copyright (c) 2018-2026 NVIDIA Corporation
+# gpu: NVIDIA H100, 65247 MiB
+
+== mesh 256x64: 2048000 DOF, ~43 MB working set ==
+
+== mesh 512x64: 4096000 DOF, ~86 MB working set ==
+
+== mesh 512x128: 8192000 DOF, ~172 MB working set ==
+
+== mesh 1024x128: 16384000 DOF, ~344 MB working set ==
+
+== mesh 1024x256: 32768000 DOF, ~688 MB working set ==
+
+# done. metrics -> results/ncu_45382082.csv
+# collect with: python3 scripts/collect_ncu.py results/ncu_45382082.csv

@@ -1,0 +1,204 @@
+remove openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+Lmod has detected the following error: The following module(s) are unknown:
+"cuda/12.3"
+
+Please check the spelling or version number. Also try "module spider ..."
+It is also possible your cache file is out-of-date; it may help to try:
+  $ module --ignore_cache load "cuda/12.3"
+
+Also make sure that all modulefiles written in TCL start with the string
+#%Module
+
+
+
+load openmpi/4.1.5-gcc (LD_LIBRARY_PATH)
+# host=as04r3b01  date=2026-08-07T21:57:53Z
+/scratch/slurm/job44386410/slurm_script: line 34: nvcc: command not found
+# nvcc: 
+# mpi:  mpirun (Open MPI) 4.1.5
+# gcc:  gcc (GCC) 11.5.0 20240719 (Red Hat 11.5.0-5)
+# gpu: NVIDIA H100, 595.71.05
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b01
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b15
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b15
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b15
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b15
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r4b24
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r4b24
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r4b24
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r4b24
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b12
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b12
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b12
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+WARNING: Could not generate an xpmem segment id for this process'
+address space.
+
+The vader shared memory BTL will fall back on another single-copy
+mechanism if one is available. This may result in lower performance.
+
+  Local host: as04r3b12
+  Error code: 2 (No such file or directory)
+--------------------------------------------------------------------------
+# dispersive tsunami over a continental margin
+# 16 ranks, 1000x500 elements, P=4, 6.25e+07 DOF, dx=800 m, tEnd=2.00 h
+# basin 4000x2000 km, depth 4000 m -> shelf 150 m, source 2.0 m
+#  sample     t[min]   etaMaxShelf[m]  etaMaxGlobal[m]
+       0/120       0.00         0.0000           2.0000   [0 s elapsed]
+      10/120      10.00         0.0057           0.8835   [171 s elapsed]
+      20/120      20.00         0.0066           0.7949   [340 s elapsed]
+      30/120      30.00         0.0042           0.7244   [502 s elapsed]
+      40/120      40.00         0.0031           0.6670   [658 s elapsed]
+      50/120      50.00         0.0032           0.6199   [809 s elapsed]
+      60/120      60.00         0.0032           0.5830   [953 s elapsed]
+      70/120      70.00         0.0032           0.5635   [1090 s elapsed]
+      80/120      80.00         0.0209           0.5802   [1221 s elapsed]
+      90/120      90.00         0.2213           0.6397   [1345 s elapsed]
+     100/120     100.00         0.4767           0.7173   [1462 s elapsed]
+     110/120     110.00         0.5882           0.7914   [1571 s elapsed]
+     120/120     120.00         0.6438           0.8546   [1671 s elapsed]
+#
+# shelf peak eta = 0.6438 m at (x,y)=(3316.0,1000.0) km, t=120.0 min
+# Green's-law 1D estimate from the source amplitude: 4.5449 m  (ratio 0.142)
+# compute 1671.2 s (+0.0 s output), 620370 accepted steps, 69.6 GDOF/s aggregate, 4.35 GDOF/s per GPU
+# same work on one GPU at the measured 3.09 GDOF/s: 10.5 h
+ranks,Nx,Ny,P,dof,dx_m,tEnd_h,etaShelfPeak,xPk_km,yPk_km,tPk_min,green_m,acc,rej,wall_s,vtk_s,gdof_s,massDrift
+16,1000,500,4,62500000,800.0,2.000,0.643815,3316.000,1000.000,120.000,4.544877,620370,9,1671.198,0.000,69.60,3.61e-14

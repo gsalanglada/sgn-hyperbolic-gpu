@@ -1,0 +1,21 @@
+# build products (machine-specific; rebuild with `make`)
+build/
+*.o
+*.a
+
+# bulky visualisation and raw profiler output (regenerable; see MANIFEST.md)
+*.vtk
+*.nsys-rep
+*.sqlite
+*.ncu-rep
+
+# Python caches
+__pycache__/
+*.pyc
+
+# editor / OS clutter
+*.bak
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
